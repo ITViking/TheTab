@@ -1,0 +1,185 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/*  Stock Styling   */
+
+td button {
+    width: -webkit-fill-available;
+    height: 40px;
+    border: none;
+    background-color: white;
+    margin: -5px;
+}
+    
+td button:focus {
+    outline: 0;
+}
+
+td button:active {
+    outline: none;
+    border: none;
+    background-color: lightblue;
+}
+
+/* Tabs Styling */
+
+tr.clickable-row:active {
+    background-color: lightblue;
+}
+
+/* Single Tab Styling */
+
+.single-tab {
+   
+}
+
+/* The Receipt */
+div.tab {
+    width: 95%;
+    margin: 0 auto;
+    height: 15px;
+    margin-bottom: -5px;
+    background-color: black !important;
+    box-shadow: inset 0 0 35px #ddd;
+    border-radius: 50px
+}
+
+
+.panel {
+    width: 70%;
+    left: 15%;
+}
+
+.pseudo {
+    position: relative;
+}
+
+.pseudo:before {
+    content: "";
+    position: absolute;
+    width: 96%;
+    top: 5px;
+    left: 2%;
+    border-bottom: 1px dashed #000;
+}
+
+.panel-dark {
+    background-color: #f7f7f7;
+    border-color: #f7f7f7;
+    box-shadow: 0 5px 15px #ccc;
+}
+
+.pseudo:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 33.333%, #f7f7f7 33.333%, #f7f7f7 66.667%, rgba(0, 0, 0, 0) 66.667%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 33.333%, #f7f7f7 33.333%, #f7f7f7 66.667%, rgba(0, 0, 0, 0) 66.667%) !important;
+    background-size: 20px 40px;
+    background-position: 50% -30px;
+    background-repeat: repeat-x;
+    z-index: 1;
+}
+
+.container-print {
+    padding: 0;
+}
+
+@-webkit-keyframes shake-it-baby {
+    0% {
+        height: 0px;
+        transform: translate(-0.5px, 0.5px) rotate(-0.1deg);
+    }
+
+    10% {
+        height: 10px;
+        transform: translate(0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    20% {
+        height: 20px;
+        transform: translate(-0.5px, 0.5px) rotate(-0.1deg);
+    }
+
+    30% {
+        height: 35px;
+        transform: translate(0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    40% {
+        height: 50px;
+        transform: translate(-0.5px, 0.5px) rotate(-0.1deg);
+    }
+
+    50% {
+        height: 70px;
+        transform: translate(0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    60% {
+        height: 75px;
+        transform: translate(-0.5px, 0.5px) rotate(-0.1deg);
+    }
+
+    70% {
+        height: 95px;
+        transform: translate(0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    80% {
+        height: 105px;
+        transform: translate(-0.5px, 0.5px) rotate(-0.1deg);
+    }
+
+    90% {
+        height: 125px;
+        transform: translate(0.5px, -0.5px) rotate(0.1deg);
+    }
+
+    100% {
+        height: 140px;
+        transform: translate(-0.5px, 0.5px) rotate(-0.1deg);
+    }
+}
+
+.container-print .panel-body {
+    animation: shake-it-baby 1s;
+    overflow: hidden;
+}
+

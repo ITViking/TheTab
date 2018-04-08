@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Stregelisten.Data.Beverage>
+
+@{
+    ViewData["Title"] = "Tab";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int price = 0;
+}
+
+
+
+<center>
+    <h2>Tab</h2>
+
+    <div class="single-tab">
+        <table>
+            @*<thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+                        <th>
+                            Antal
+                        </th>
+                    </tr>
+                </thead>*@
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                    </tr>
+                    
+                        price = Model.Sum(x => x.Price);
+                }
+                    
+                    <tr>
+                        <td>
+                            <b>Total</b>
+                        </td>
+                        <td>
+                            @price
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</center>
+
+
